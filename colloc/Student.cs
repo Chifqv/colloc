@@ -30,7 +30,7 @@ namespace colloc
 			FIO = fio;
 			Grade = grade;
 			Performance = performance;
-			Stage = GetStage(grade); // устанавливаем stage в зависимости от класса
+			Stage = GetStage(grade);
 		}
 		private string GetStage(int grade)
 		{

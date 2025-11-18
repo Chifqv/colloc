@@ -17,7 +17,7 @@ namespace colloc
 
 		public List<Student> FilterHonors()
 		{
-			var res = new List<Student>();
+			List<Student> res = new List<Student>();
 
 			foreach (School school in Schools)
 			{
@@ -34,7 +34,7 @@ namespace colloc
 		}
 		public List<Student> FilterLoser()
 		{
-			var res = new List<Student>();
+			List<Student> res = new List<Student>();
 
 			foreach (School school in Schools)
 			{

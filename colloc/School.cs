@@ -10,7 +10,6 @@ namespace colloc
 	{
 		string Name { get; set; }
 		private List<Student> Students = new List<Student>();
-		private int CountStud;
 		public School(string name)
 		{
 			Name = name;
@@ -19,7 +18,6 @@ namespace colloc
 		public void Add(Student student)
 		{
 			Students.Add(student);
-			CountStud++;
 		}
 
 		public List<Student> Analize()
@@ -30,7 +28,7 @@ namespace colloc
 		public override string ToString()
 		{
 			string res = "";
-			for (int i = 0; i < CountStud; i++)
+			for (int i = 0; i < Students.Count; i++)
 			{
 				res += $"\n {i+1}. {Students[i].ToString()}";
 			}
